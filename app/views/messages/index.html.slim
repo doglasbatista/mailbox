@@ -1,6 +1,6 @@
 .grid-container
   .grid-10
-    = button_to new_message_path, class: 'btn btn-secondary btn-circle new-message' do
+    = button_to new_message_path, class: 'btn btn-secondary btn-circle new-message', method: :get do
       i.fa.fa-plus
     end
   .grid-20
