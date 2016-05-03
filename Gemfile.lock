@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/LiveTyping/state_machine.git
+  revision: e06c150b0442a0a884fbc726ff8f142020360b1f
+  specs:
+    state_machine (1.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -175,7 +181,6 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.11)
-    state_machines (0.4.0)
     thin (1.6.4)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
@@ -217,7 +222,7 @@ DEPENDENCIES
   simplecov
   spring
   sqlite3
-  state_machines
+  state_machine (~> 1.2.1)!
   thin
   turbolinks
   uglifier (>= 1.3.0)

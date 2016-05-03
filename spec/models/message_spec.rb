@@ -25,5 +25,18 @@ RSpec.describe Message, type: :model do
       @message.read
       expect(@message.read_at).not_to be_nil
     end
+
+    it 'archive a message' do
+      expect(@message.state).to eql('unread')
+      @message.read
+      expect(@message.state).to eql('read')
+      @message.archive
+      expect(@message.state).to eql('archived')
+    end
+
+    it 'mark archived_at with current date when user archive a message' do
+      @message.archive
+      expect(@message.archived_at).not_to be_nil
+    end
   end
 end
