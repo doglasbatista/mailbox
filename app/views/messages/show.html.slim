@@ -1,0 +1,7 @@
+.box.grid-50.prefix-25
+  h1 = @message.title
+  p = @message.content
+  .buttons.grid-80
+    = button_to :back, class: 'btn btn-primary btn-circle grid-10', method: :get do
+      i.fa.fa-angle-double-left.fa-2x
+    end

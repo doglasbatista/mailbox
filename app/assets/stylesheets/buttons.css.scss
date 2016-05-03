@@ -1,0 +1,26 @@
+.btn {
+  padding: .5em;
+  font-size: .8em;
+  height: 3.8em;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: .3em;
+  width: 100%;
+  margin: .5em;
+  cursor: pointer;
+  outline: 0;
+}
+
+.btn-circle {
+  border-radius: 50%;
+}
+
+.btn-primary {
+  background-color: #FF4182;
+  transition: .5s all;
+  &:hover {
+    transition: .5s all;
+    background-color: darken(#FF4182, 20%);
+  }
+}

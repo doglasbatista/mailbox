@@ -1,0 +1,19 @@
+.box {
+  padding: 1em 1.5em !important;
+  box-shadow: 0 4px 8px 0 rgba(black, .2),
+              0 6px 20px 0 rgba(black, .19);
+  position: relative;
+  h1 {
+    font-weight: 600;
+  }
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+  }
+  .buttons {
+    padding: 0;
+    @media screen and (max-width: 900px) { width: 30em; }
+    @media screen and (max-width: 770px) { width: 3em; }
+  }
+}

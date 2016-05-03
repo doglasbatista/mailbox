@@ -13,5 +13,6 @@
  *= require_tree .
  *= require unsemantic
  *= require reset-css
+ *= require font-awesome
  *= require_self
  */

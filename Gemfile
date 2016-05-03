@@ -13,6 +13,7 @@ gem 'state_machine', '~> 1.2.1', github: 'LiveTyping/state_machine'
 gem 'slim-rails'
 gem 'bower-rails'
 gem 'modernizr-rails'
+gem 'font-awesome-rails'
 
 
 group :development, :test do
