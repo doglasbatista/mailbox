@@ -6,6 +6,6 @@
         .title
           = message.title
         .content
-          =message.content
+          =truncate(message.content, length: 100)
       end
   end
