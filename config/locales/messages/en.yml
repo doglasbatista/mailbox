@@ -3,3 +3,5 @@ en:
     index:
       archive_all: 'Archive All'
       archive: 'Archive'
+    new:
+      title: 'New Message'

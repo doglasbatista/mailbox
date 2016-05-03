@@ -1,0 +1,36 @@
+@import 'colors';
+
+.form-title {
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: $midnight-blue;
+}
+
+.form-element {
+  margin: .5em auto;
+}
+
+label, label.string, label.text {
+  display: block;
+  padding-bottom: .4em;
+  abbr {
+    color: $alizarin;
+  }
+}
+
+input, textarea {
+  width: 100%;
+  outline: 0;
+}
+
+input[type='text'], textarea {
+  color: $midnight-blue;
+  border: 1px solid white;
+  background-color: $silver;
+  padding: 1em;
+  border-radius: .3em;
+  &:focus {
+    border: 1px solid $peter-river;
+  }
+}

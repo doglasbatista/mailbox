@@ -14,6 +14,7 @@ gem 'slim-rails'
 gem 'bower-rails'
 gem 'modernizr-rails'
 gem 'font-awesome-rails'
+gem 'simple_form'
 
 
 group :development, :test do

@@ -1,0 +1,11 @@
+= simple_form_for(@message, html: { class: 'box grid-40 prefix-30' }) do |f|
+  .form-element.grid-90
+    h2.form-title = title
+  .form-element.grid-90
+    = f.input :title
+  .form-element.grid-90
+    = f.input :content
+
+  .form-element.grid-95
+    = f.button :submit, class: 'btn btn-primary'
+end
