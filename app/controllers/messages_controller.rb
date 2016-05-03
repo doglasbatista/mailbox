@@ -4,7 +4,7 @@ class MessagesController < ApplicationController
   respond_to :html, :json
 
   def index
-    @messages = Message.all
+    @messages = Message.not_archived
     respond_with(@messages)
   end
 

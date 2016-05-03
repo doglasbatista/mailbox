@@ -39,4 +39,16 @@ RSpec.describe Message, type: :model do
       expect(@message.archived_at).not_to be_nil
     end
   end
+
+  describe 'named scope' do
+    it 'not_archived' do
+      message1 = FactoryGirl.create(:message)
+      message2 = FactoryGirl.create(:message)
+      message3 = FactoryGirl.create(:message)
+
+      message1.archive
+
+      expect(Message.not_archived).not_to eql([message3, message2])
+    end
+  end
 end

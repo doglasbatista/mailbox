@@ -1,5 +1,7 @@
 class Message < ActiveRecord::Base
 
+  scope :not_archived, -> { where.not(state: 'archived').order('created_at desc') }
+
   validates :title, presence: true
   validates :content, presence: true
 
