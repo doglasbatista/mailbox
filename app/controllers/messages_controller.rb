@@ -42,6 +42,11 @@ class MessagesController < ApplicationController
     respond_with(@message, location: messages_path)
   end
 
+  def archive_all
+    @messages = Message.not_archived.each { |message| message.archive }
+    respond_with(@messages, location: messages_path)
+  end
+
   private
 
   def set_message

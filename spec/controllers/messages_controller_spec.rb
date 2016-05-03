@@ -152,4 +152,21 @@ RSpec.describe MessagesController, type: :controller do
     end
   end
 
+  describe "PUT #archive_all" do
+    before do
+      3.times { FactoryGirl.create(:message) }
+      @messages = Message.not_archived
+      put :archive_all, valid_session
+      @messages.reload
+    end
+
+    it "archive all message" do
+      expect(@messages).to eq([])
+    end
+
+    it "redirects to the messages list" do
+      expect(response.redirect_url).to eql(messages_url)
+    end
+  end
+
 end
