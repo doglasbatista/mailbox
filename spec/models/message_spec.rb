@@ -20,5 +20,10 @@ RSpec.describe Message, type: :model do
       @message.read
       expect(@message.state).to eql('read')
     end
+
+    it 'mark read_at with current date when user read a message' do
+      @message.read
+      expect(@message.read_at).not_to be_nil
+    end
   end
 end

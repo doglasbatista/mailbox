@@ -9,6 +9,10 @@ class Message < ActiveRecord::Base
       transition unread: :read
     end
 
+    after_transition to: :read do |message|
+      message.read_at = Time.current
+    end
+
   end
 
 end

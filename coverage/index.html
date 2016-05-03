@@ -14,7 +14,7 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2016-05-02T22:02:40-03:00">2016-05-02T22:02:40-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2016-05-02T22:11:54-03:00">2016-05-02T22:11:54-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>23</b> files in total.
-    <b>217</b> relevant lines. 
-    <span class="green"><b>217</b> lines covered</span> and
+    <b>221</b> relevant lines. 
+    <span class="green"><b>221</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -83,11 +83,11 @@
       <tr>
         <td class="strong"><a href="#bde4b3ae024e6c400a36ca534c8e5cab8dab8b94" class="src_link" title="app/models/message.rb">app/models/message.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>14</td>
-        <td>6</td>
-        <td>6</td>
+        <td>18</td>
+        <td>8</td>
+        <td>8</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.1</td>
       </tr>
       
       <tr>
@@ -234,8 +234,8 @@
         <td class="strong"><a href="#c322a2f64ed5add586828806c7d4e23aebf4eb54" class="src_link" title="spec/controllers/messages_controller_spec.rb">spec/controllers/messages_controller_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>140</td>
-        <td>81</td>
-        <td>81</td>
+        <td>80</td>
+        <td>80</td>
         <td>0</td>
         <td>1.4</td>
       </tr>
@@ -253,9 +253,9 @@
       <tr>
         <td class="strong"><a href="#76108837c47988ab5e3c80952b56682e176c9254" class="src_link" title="spec/models/message_spec.rb">spec/models/message_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>24</td>
-        <td>14</td>
-        <td>14</td>
+        <td>29</td>
+        <td>17</td>
+        <td>17</td>
         <td>0</td>
         <td>1.2</td>
       </tr>
@@ -267,7 +267,7 @@
         <td>18</td>
         <td>18</td>
         <td>0</td>
-        <td>2.5</td>
+        <td>2.6</td>
       </tr>
       
       <tr>
@@ -721,8 +721,8 @@
     <h3>app/models/message.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>6</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
+      <b>8</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -796,19 +796,43 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    after_transition to: :read do |message|</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="2" data-linenumber="13">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      message.read_at = Time.current</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
           
           
           <code class="ruby">end</code>
@@ -2365,8 +2389,8 @@
     <h3>spec/controllers/messages_controller_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>81</b> relevant lines. 
-      <span class="green"><b>81</b> lines covered</span> and
+      <b>80</b> relevant lines. 
+      <span class="green"><b>80</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2566,8 +2590,8 @@
           <code class="ruby">      expect(assigns(:message)).to eq(message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="33">
+          
           
           <code class="ruby">    end</code>
         </li>
@@ -2584,8 +2608,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
-          
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &quot;GET #new&quot; do</code>
         </li>
@@ -2608,8 +2632,8 @@
           <code class="ruby">      expect(assigns(:message)).to be_a_new(Message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="40">
+          
           
           <code class="ruby">    end</code>
         </li>
@@ -2626,8 +2650,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
-          
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &quot;GET #edit&quot; do</code>
         </li>
@@ -2656,8 +2680,8 @@
           <code class="ruby">      expect(assigns(:message)).to eq(message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="48">
+          
           
           <code class="ruby">    end</code>
         </li>
@@ -2674,8 +2698,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
-          
+        <li class="covered" data-hits="1" data-linenumber="51">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &quot;POST #create&quot; do</code>
         </li>
@@ -2704,8 +2728,8 @@
           <code class="ruby">          post :create, {:message =&gt; valid_attributes}, valid_session</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="56">
+          
           
           <code class="ruby">        }.to change(Message, :count).by(1)</code>
         </li>
@@ -2722,8 +2746,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
-          
+        <li class="covered" data-hits="1" data-linenumber="59">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &quot;assigns a newly created message as @message&quot; do</code>
         </li>
@@ -2746,8 +2770,8 @@
           <code class="ruby">        expect(assigns(:message)).to be_persisted</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="63">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -2758,8 +2782,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
-          
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &quot;redirects to the created message&quot; do</code>
         </li>
@@ -2776,8 +2800,8 @@
           <code class="ruby">        expect(response).to redirect_to(Message.last)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="68">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -2794,8 +2818,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
-          
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
           
           <code class="ruby">    context &quot;with invalid params&quot; do</code>
         </li>
@@ -2818,8 +2842,8 @@
           <code class="ruby">        expect(assigns(:message)).to be_a_new(Message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="75">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="75">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -2830,8 +2854,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
-          
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &quot;re-renders the &#39;new&#39; template&quot; do</code>
         </li>
@@ -2848,8 +2872,8 @@
           <code class="ruby">        expect(response).to render_template(&quot;new&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="80">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="80">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -2872,8 +2896,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="84">
-          
+        <li class="covered" data-hits="1" data-linenumber="84">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &quot;PUT #update&quot; do</code>
         </li>
@@ -2896,8 +2920,8 @@
           <code class="ruby">        FactoryGirl.attributes_for(:message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="88">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="88">
+          
           
           <code class="ruby">      }</code>
         </li>
@@ -2908,8 +2932,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="90">
-          
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &quot;updates the requested message&quot; do</code>
         </li>
@@ -2938,8 +2962,8 @@
           <code class="ruby">        expect(message.title).to eql(new_attributes[:title])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="95">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="95">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -2950,8 +2974,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="97">
-          
+        <li class="covered" data-hits="1" data-linenumber="97">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &quot;assigns the requested message as @message&quot; do</code>
         </li>
@@ -2974,8 +2998,8 @@
           <code class="ruby">        expect(assigns(:message)).to eq(message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="101">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="101">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -2986,8 +3010,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="103">
-          
+        <li class="covered" data-hits="1" data-linenumber="103">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &quot;redirects to the message&quot; do</code>
         </li>
@@ -3010,8 +3034,8 @@
           <code class="ruby">        expect(response).to redirect_to(message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="107">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="107">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -3028,8 +3052,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="110">
-          
+        <li class="covered" data-hits="1" data-linenumber="110">
+          <span class="hits">1</span>
           
           <code class="ruby">    context &quot;with invalid params&quot; do</code>
         </li>
@@ -3058,8 +3082,8 @@
           <code class="ruby">        expect(assigns(:message)).to eq(message)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="115">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="115">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -3070,8 +3094,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="117">
-          
+        <li class="covered" data-hits="1" data-linenumber="117">
+          <span class="hits">1</span>
           
           <code class="ruby">      it &quot;re-renders the &#39;edit&#39; template&quot; do</code>
         </li>
@@ -3094,8 +3118,8 @@
           <code class="ruby">        expect(response).to render_template(&quot;edit&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="121">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="121">
+          
           
           <code class="ruby">      end</code>
         </li>
@@ -3118,8 +3142,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="125">
-          
+        <li class="covered" data-hits="1" data-linenumber="125">
+          <span class="hits">1</span>
           
           <code class="ruby">  describe &quot;DELETE #destroy&quot; do</code>
         </li>
@@ -3148,8 +3172,8 @@
           <code class="ruby">        delete :destroy, {:id =&gt; message.to_param}, valid_session</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="130">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="130">
+          
           
           <code class="ruby">      }.to change(Message, :count).by(-1)</code>
         </li>
@@ -3166,8 +3190,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="133">
-          
+        <li class="covered" data-hits="1" data-linenumber="133">
+          <span class="hits">1</span>
           
           <code class="ruby">    it &quot;redirects to the messages list&quot; do</code>
         </li>
@@ -3190,8 +3214,8 @@
           <code class="ruby">      expect(response).to redirect_to(messages_url)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="137">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="137">
+          
           
           <code class="ruby">    end</code>
         </li>
@@ -3277,8 +3301,8 @@
     <h3>spec/models/message_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>14</b> relevant lines. 
-      <span class="green"><b>14</b> lines covered</span> and
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -3346,8 +3370,8 @@
           <code class="ruby">    before do</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="11">
+          <span class="hits">3</span>
           
           <code class="ruby">      @message = FactoryGirl.create(:message)</code>
         </li>
@@ -3421,10 +3445,40 @@
         <li class="never" data-hits="" data-linenumber="23">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="24">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    it &#39;mark read_at with current date when user read a message&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      @message.read</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      expect(@message.read_at).not_to be_nil</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">end</code>
@@ -3616,8 +3670,8 @@
           <code class="ruby">  config.before(:each) do</code>
         </li>
       
-        <li class="covered" data-hits="28" data-linenumber="29">
-          <span class="hits">28</span>
+        <li class="covered" data-hits="29" data-linenumber="29">
+          <span class="hits">29</span>
           
           <code class="ruby">    DatabaseCleaner.start</code>
         </li>
