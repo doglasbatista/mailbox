@@ -1,0 +1,24 @@
+{
+  "name": "unsemantic",
+  "version": "1.1.0",
+  "description": "Fluid grid for mobile, tablet, and desktop.",
+  "license": [
+    "GPL",
+    "MIT"
+  ],
+  "main": [
+    "assets/stylesheets/unsemantic-grid-responsive-no-ie7.css",
+    "assets/stylesheets/unsemantic-grid-responsive-tablet-no-ie7.css"
+  ],
+  "ignore": [],
+  "homepage": "https://github.com/nathansmith/unsemantic",
+  "_release": "1.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.1.0",
+    "commit": "926c03eaa02e6e59bcdd6d1c76b65d10e002bfc0"
+  },
+  "_source": "https://github.com/nathansmith/unsemantic.git",
+  "_target": "*",
+  "_originalSource": "unsemantic"
+}

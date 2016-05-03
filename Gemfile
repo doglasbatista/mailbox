@@ -5,15 +5,14 @@ gem 'rails', '4.2.6'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
-gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'responders'
 gem 'state_machine', '~> 1.2.1', github: 'LiveTyping/state_machine'
 gem 'slim-rails'
-
+gem 'bower-rails'
+gem 'modernizr-rails'
 
 
 group :development, :test do
