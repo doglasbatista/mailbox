@@ -1,1 +1,11 @@
-h1 = t('.mailbox')
+.grid-container
+  ul.messages-list.grid-100
+  -@messages.each do |message|
+    li.message.grid-100
+      =link_to message do
+        .title
+          = message.title
+        .content
+          =message.content
+      end
+  end

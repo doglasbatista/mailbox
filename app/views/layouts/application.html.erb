@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mailbox</title>
-  <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application', :modernizr %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Mailbox</title>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application', :modernizr %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-<%= yield %>
+  <%= render 'layouts/navbar' %>
+  <%= yield %>
 
-</body>
+  </body>
 </html>
