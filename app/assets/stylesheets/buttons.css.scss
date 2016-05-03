@@ -25,6 +25,15 @@
   }
 }
 
+.btn-secondary {
+  background-color: #16a085;
+  transition: .5s all;
+  &:hover {
+    transition: .5s all;
+    background-color: darken(#16a085, 10%);
+  }
+}
+
 .btn-danger {
   background-color: #e74c3c;
   transition: .5s all;
@@ -41,4 +50,12 @@
 
 .btn-big {
   padding: 1em;
+}
+
+.new-message {
+  position: fixed;
+  left: .5em;
+  bottom: .5em;
+  width: 4em;
+  z-index: 1;
 }

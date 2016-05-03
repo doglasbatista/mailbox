@@ -1,5 +1,9 @@
 .grid-container
-  .grid-20.prefix-90
+  .grid-10
+    = button_to new_message_path, class: 'btn btn-secondary btn-circle new-message' do
+      i.fa.fa-plus
+    end
+  .grid-20
     = link_to t('.archive_all'), archive_all_messages_url(format: :json), method: :put, class: 'btn btn-danger btn-big archive-all-messages'
   ul.messages-list.grid-100
   -@messages.each do |message|
@@ -8,7 +12,7 @@
         .title
           = message.title
         .content
-          =truncate(message.content, length: 100)
+          =truncate(message.content, length: 30)
         .links
           = link_to t('.archive'), archive_message_url(message, format: :json), method: :put, class: 'btn btn-danger btn-mini archive-message'
       end
