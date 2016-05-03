@@ -137,4 +137,19 @@ RSpec.describe MessagesController, type: :controller do
     end
   end
 
+   describe "PUT #archive" do
+    it "archive the requested message" do
+      message = FactoryGirl.create(:message)
+      put :archive, {:id => message.to_param}, valid_session
+      message.reload
+      expect(message.state).to eql('archived')
+    end
+
+    it "redirects to the messages list" do
+      message = FactoryGirl.create(:message)
+      put :archive, {:id => message.to_param}, valid_session
+      expect(response.redirect_url).to eql(messages_url)
+    end
+  end
+
 end

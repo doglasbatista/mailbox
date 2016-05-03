@@ -1,5 +1,5 @@
 class MessagesController < ApplicationController
-  before_action :set_message, only: [:show, :edit, :update, :destroy]
+  before_action :set_message, only: [:show, :edit, :update, :destroy, :archive]
 
   respond_to :html, :json
 
@@ -35,6 +35,11 @@ class MessagesController < ApplicationController
   def destroy
     @message.destroy
     respond_with(@message)
+  end
+
+  def archive
+    @message.archive
+    respond_with(@message, location: messages_path)
   end
 
   private
