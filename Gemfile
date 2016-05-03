@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'responders'
 gem 'state_machine', '~> 1.2.1', github: 'LiveTyping/state_machine'
+gem 'slim-rails'
 
 
 
