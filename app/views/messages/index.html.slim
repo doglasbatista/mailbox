@@ -7,5 +7,7 @@
           = message.title
         .content
           =truncate(message.content, length: 100)
+        .links
+          = link_to 'archive', archive_message_url(message, format: :json), method: :put, class: 'btn btn-danger btn-mini archive-message'
       end
   end

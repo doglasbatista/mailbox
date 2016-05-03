@@ -24,3 +24,17 @@
     background-color: darken(#FF4182, 20%);
   }
 }
+
+.btn-danger {
+  background-color: #e74c3c;
+  transition: .5s all;
+  &:hover {
+    transition: .5s all;
+    background-color: darken(#e74c3c, 20%);
+  }
+}
+
+.btn-mini {
+  width: 4em;
+  height: .7em;
+}

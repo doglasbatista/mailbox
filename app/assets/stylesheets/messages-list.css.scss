@@ -5,16 +5,28 @@
   padding: 1em 2em;
   list-style-type: none;
   transition: .3s all;
+  position: relative;
   &:hover {
     transition: .3s all;
     background-color: #F5F5F5;
     a {
       color: darken(#2c3e50, 10%);
     }
+    .archive-message {
+      color: white;
+    }
   }
   .title {
     font-weight: 600;
     margin-bottom: .5em;
+  }
+  .content {
+    float: left;
+  }
+  .archive-message {
+    position: absolute;
+    right: .5em;
+    color: white;
   }
   a {
     text-decoration: none;
