@@ -18,17 +18,9 @@ class MessagesController < ApplicationController
     respond_with(@message)
   end
 
-  def edit
-  end
-
   def create
     @message = Message.new(message_params)
     @message.save
-    respond_with(@message)
-  end
-
-  def update
-    @message.update(message_params)
     respond_with(@message)
   end
 
